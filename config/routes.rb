@@ -29,4 +29,7 @@ Rails.application.routes.draw do
   #login -> close session
   #post login -> create session
   
+  resources :styles, only: [:new, :create, :show]
+  resources :ingredients, only: [:new, :create, :show]
+
 end
